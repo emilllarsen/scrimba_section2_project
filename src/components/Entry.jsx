@@ -4,12 +4,12 @@ export default function Entry(props) {
       <figure className="imgFigure">
         <img
           className="entryImg"
-          src={props.img}
-          alt={props.alt}
+          src={props.img.src}
+          alt={props.img.alt}
         />
       </figure>
       <section className="entrySectionInformation">
-        <img className="entryMarker" src={props.marker} alt={props.markerText} />
+        <img className="entryMarker" src="../../public/images/marker.png"/>
         <span className="country">{props.country}</span>
         <a className="googleMapsLink" href={props.googleMapsLink} target="_blank">View In Google Maps</a>
         <h2 className="entryMountain">{props.title}</h2>
